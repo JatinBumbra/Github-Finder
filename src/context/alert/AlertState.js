@@ -10,7 +10,7 @@ const AlertState = ({ children }) => {
 	// Set the alert messages
 	const setAlert = (msg, type) => {
 		dispatch({ type: SET_ALERT, payload: { msg, type } });
-		setTimeout(() => dispatch({ type: REMOVE_ALERT }), 5000);
+		setTimeout(() => dispatch({ type: REMOVE_ALERT }), 2500);
 	};
 
 	return (
